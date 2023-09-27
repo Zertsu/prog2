@@ -1,15 +1,16 @@
-from os import mkdir
+from os import mkdir, makedirs
 from os.path import join as j
 from shutil import copyfile
 
-pname = input("Enter new project name: ")
+ppath = input("Enter new project name: ").split("/")
 t = ".template"
+pname = ppath[-1]
 
-mkdir(pname)
-mkdir(j(pname, "headers"))
-mkdir(j(pname, "src"))
-copyfile(j(t, "main.c"), j(pname, "src", "main.c"))
+makedirs(j(*ppath))
+mkdir(j(*ppath, "headers"))
+mkdir(j(*ppath, "src"))
+copyfile(j(t, "main.c"), j(*ppath, "src", "main.c"))
 
 with open(j(t, "CMakeLists.txt"), "r") as inp:
-    with open(j(pname, "CMakeLists.txt"), "w") as out:
+    with open(j(*ppath, "CMakeLists.txt"), "w") as out:
         out.write(inp.read().replace("<PNAME>", pname))
