@@ -1,0 +1,9 @@
+8
+Kukori-pizza pizza-szosz,sajt,gomba,oregano 30
+Margherita-pizza  pizza-szosz,sajt,kukorica 25
+Virslis-pizza pizza-szosz,sajt,oregano,paradicsom 28
+Bolognai-pizza pizza-szosz,sajt,virsli 35
+Carbonara-pizza bolognai-szosz,tejfol,sajt 35
+Dupla-Pepperonis-pizza tejszinesalap,bacon,tojas,sajt 1200
+Flop-pizza pizza-szosz,szalami,csipos-es-edes-pepperoni,sajt 36
+Kolbaszos-pizza pizza-szosz,sonka,kukorica,sajt,bacon 31
