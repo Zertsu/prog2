@@ -1,8 +1,16 @@
 from os import mkdir, makedirs
 from os.path import join as j
 from shutil import copyfile
+from argparse import ArgumentParser
 
-ppath = input("Enter new project name: ").split("/")
+parser =ArgumentParser()
+parser.add_argument("-n", required=False)
+args = parser.parse_args()
+
+if args.n == None:
+    ppath = input("Enter new project name: ").split("/")
+else:
+    ppath = args.n.split("/")
 t = ".template"
 pname = ppath[-1]
 
