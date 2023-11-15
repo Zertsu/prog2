@@ -1,0 +1,6 @@
+5
+Oroszlanok 12
+Parducok 5
+Fokak 21
+Csirkek 18
+Krokodilok 20
